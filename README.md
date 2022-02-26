@@ -1,21 +1,19 @@
-# tests_github_actions
+# Github Action pour compiler puis héberger sur une github page un .Rmd
 
-# Apprendre à faire un github action pour compiler puis héberger un Rmd
+1. Créer les fichiers `tutorials\exo.Rmd` et`tutorials\tuto.Rmd`. 
 
-1. Générer un Personal access token qui a l'autorisation `workflows` et pas uniquement `repo`. 
+2. Créer le fichier [`.github\workflows\render-markdown.yaml`](.github\workflows\render-markdown.yaml)
 
-2. Créer le fichier `tutorials\tutorial1.Rmd`. 
+*Remarque : il est possible d'initialiser un .yaml avec la commande `usethis::use_github_action("render-rmarkdown.yaml")` sur R.*
 
-3. Initialiser le CI. Pour cela, taper la commande R suivante : 
+3. Faire un commit push
 
-```
-usethis::use_github_action("render-rmarkdown.yaml")
-```
+*Remarque : Il est nécessaire de générer un Personal access token qui a l'autorisation `workflows` et pas uniquement `repo`. *
 
-=> Le fichier `.github/worklows/render-rmarkdown.yaml`  est initialisé
-
-3. 
+4. Paramétrer l'URL de la github page du repertoire : *Settings > Pages > Source Branch : gh-pages / (root) Save*. 
 
 
-*Source : https://tgerke.github.io/github-actions-with-r/*
+C'est bon, les pages sont bien disponibles [ici](https://antuki.github.io/tests_github_actions/tuto.html) et [là](https://antuki.github.io/tests_github_actions/exi.html).
+
+*Source : https://tgerke.github.io/github-actions-with-r/ et https://github.com/InseeFrLab/lockdown-maps-R*
 
