@@ -1,16 +1,18 @@
 # tests_github_actions
 
-Apprendre à faire un github action pour créer un Rmd.
+# Apprendre à faire un github action pour compiler puis héberger un Rmd
 
-1. Créer un fichier Rmd dans le dossier tutorials. 
+1. Générer un Personal access token qui a l'autorisation `workflows` et pas uniquement `repo`. 
 
-2. Initialiser le CI. Taper la commande R suivante : 
+2. Créer le fichier `tutorials\tutorial1.Rmd`. 
+
+3. Initialiser le CI. Pour cela, taper la commande R suivante : 
 
 ```
 usethis::use_github_action("render-rmarkdown.yaml")
 ```
 
-=> Le fichier .github/worklows/render-rmarkdown.yaml  est initialisé
+=> Le fichier `.github/worklows/render-rmarkdown.yaml`  est initialisé
 
 3. 
 
