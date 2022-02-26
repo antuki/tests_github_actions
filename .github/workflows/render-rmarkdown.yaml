@@ -38,7 +38,7 @@ jobs:
           git commit ${RMD_PATH[*]/.Rmd/.md} -m 'Re-build Rmarkdown files' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
 
-deploy:
+   deploy:
     name: Deploy to GitHub Pages
     needs: render-rmarkdown
     if: github.ref == 'refs/heads/master'
