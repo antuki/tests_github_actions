@@ -1,0 +1,25 @@
+---
+title: "Formation analyse urbaine - Travaux pratiques sur R (carroyage, lissage, zones à façon)"
+author: "Kim Antunez et Julien Pramil"
+date: "11 mars 2022"
+output:
+  prettydoc::html_pretty:
+    theme: architect
+---
+
+```{r setup, include=FALSE}
+
+# path_proj <- "V:/PSAR-AU/Formation Comment utiliser les outils AU/2022/Séquence 6 - Outils [JP et KA]/tplissage_poc"
+# path_lib <- paste0(path_proj,"/packages")
+
+knitr::opts_chunk$set(echo = TRUE)
+# knitr::opts_knit$set(root.dir = path_proj)
+
+```
+
+Bienvenue ! 
+
+- [Tutoriel](tuto.html)
+- [Exercice](exo.html)
+
+RECOPIER LE README
