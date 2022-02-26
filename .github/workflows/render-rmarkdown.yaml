@@ -37,3 +37,26 @@ jobs:
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
           git commit ${RMD_PATH[*]/.Rmd/.md} -m 'Re-build Rmarkdown files' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
+
+deploy:
+    name: Deploy to GitHub Pages
+    needs: render-rmarkdown
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download HTML files
+        uses: actions/download-artifact@v2
+        with:
+          name: render-rmarkdown
+          
+      - name: Move files to build directory
+        run: |
+          mkdir build
+          mv *.html build
+      - name: Push to gh-pages branch
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
