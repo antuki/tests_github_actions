@@ -70,7 +70,7 @@ knitr::opts_template$set(clues = list(box.title = "Indices",
 
 # Présentation
 
-L'objectif est de mettre en pratique les techniques présentées dans le tutoriel, à partir de nouveaux jeux de données.
+L'objectif est de mettre en pratique les techniques présentées dans le tutoriel, à partir de nouveaux jeux de données..
 
 ## Les objectifs et les données utilisées
 

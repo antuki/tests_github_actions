@@ -33,7 +33,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Objectifs du TP
 
-En 2018, le PSAR analyse urbaine, ancêtre de la section analyse urbaine (DG/DDAR/DAR/DSAU), a développé un package R, nommé `btb`.
+En 2018, le PSAR analyse urbaine, ancêtre de la section analyse urbaine (DG/DDAR/DAR/DSAU), a développé un package R, nommé `btb`..
 
 Sa principale fonction, `kernelSmoothing`, permet de réaliser très facilement un **carroyage** et un **lissage** sur des données géolocalisées. Grâce à différentes extensions, ce package peut être utilisé de plusieurs façons :
 
