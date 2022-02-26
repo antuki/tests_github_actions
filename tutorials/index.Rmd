@@ -22,4 +22,4 @@ Bienvenue !
 - [Tutoriel](tuto.html)
 - [Exercice](exo.html)
 
-RECOPIER LE README
+RECOPIER LE README !
