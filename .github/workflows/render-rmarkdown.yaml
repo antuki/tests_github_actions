@@ -25,7 +25,7 @@ jobs:
       
       - name: Install rmarkdown
         run: |
-          Rscript -e 'install.packages("remotes","rmarkdown","prettydoc")'
+          Rscript -e 'install.packages(c("remotes","rmarkdown","prettydoc"))'
           Rscript -e "remotes::install_github('koncina/unilur')"
          
       - name: Render Rmarkdown files
